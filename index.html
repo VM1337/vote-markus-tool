@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Overlay Studio - Debug</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Vote-Markus-Tool</h1>
+            <p>Zeige deinen Support für Markus Fillgraff!</p>
+        </div>
+
+        <div class="main-content">
+            <div class="upload-section">
+                <h2 class="section-title">1. Wähle dein Profilbild aus 📷</h2>
+                <div class="file-input-wrapper">
+                    <input type="file" id="photoInput" class="file-input" accept="image/*">
+                    <label for="photoInput" class="file-input-button">Bild auswählen</label>
+                </div>
+                <div id="photoPreview" class="preview-area">
+                    <span class="placeholder-text">Vorschau</span>
+                </div>
+            </div>
+
+            <div class="overlay-section">
+                <h2 class="section-title">2. Wähle deinen Rahmen🎨</h2>
+                <div id="overlayGrid" class="overlay-grid">
+                    <!-- Overlay options will be generated here -->
+                </div>
+            </div>
+
+            <div class="canvas-section">
+                <h2 class="section-title">3. Profilbild generieren, in Zoom einsetzen und freuen 🥳 </h2>
+                <canvas id="canvas" width="600" height="400"></canvas>
+                <div class="controls">
+                    <button id="generateBtn" class="btn btn-primary" disabled>Vorschau generieren</button>
+                    <button id="downloadBtn" class="btn btn-secondary" disabled>Profilbild runterladen</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
