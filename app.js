@@ -35,7 +35,8 @@ class PhotoOverlayApp {
             'VoteMarkus4.png',
             'VoteMarkus5.png',
             'VoteMarkus6.png',
-            'VoteMarkus7.png'
+            'VoteMarkus7.png',
+            'VoteMarkus8.png'
         ];
 
        const overlays = [];
